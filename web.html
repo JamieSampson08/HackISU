@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title> Music Visualizer 2.0 </title>
+		<link rel="stylesheet" type="text/css" href="design.css"/>
+        <script src="work.js"></script>
+        <script src="jscolor.js"></script>
+    </head>
+	<h1> Welcome to Music Visualizer 2.0! </h1>
+	<body>
+		<img src="large.png" width="90" height="90">
+		<p>HackISU Fall 2017 </p>
+		<div style="text-align:center;">
+      <h4>Pick a background color: &nbsp<h4>
+        <button class="jscolor" id="color" onmouseover="change_theme(jscolor)"></button>
+      <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Pick a visualizer color: &nbsp<h4>
+
+      <button class="jscolor" id="visual" onmouseover="change_visual(jscolor)"></button>
+      <!--<button type="button" onclick="change_theme('black')"> Black </input>
+			<button type="button" onclick="change_theme('white')"> White </input> -->
+		</div>
+
+		<div id="content">
+			<input type="file" id="thefile" accept="audio/*" />
+			<canvas id="canvas"></canvas>
+			<!-- <audio id="audio" controls>
+				<source src="11blocks.mp3" type="audio/mpeg">
+			</audio> -->
+			<audio id="audio" controls></audio>
+		</div>
+
+		<div class="footer">
+			<p> Copyright &copy; 2017 Jamie Sampson  </p>
+		</div>
+	</body>
+</html>
